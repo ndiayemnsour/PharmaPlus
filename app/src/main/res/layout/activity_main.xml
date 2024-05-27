@@ -4,15 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green"
+
     tools:context=".MainActivity">
+
+    <!-- ImageView pour afficher le drawable circulaire -->
+
+    <ImageView
+        android:id="@+id/circleImageViewTop"
+        android:layout_width="305dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-60dp"
+        android:src="@drawable/rounded_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circleImageViewBottom"
+        android:layout_width="305dp"
+        android:layout_height="287dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="252dp"
+        android:src="@drawable/rounded_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/title_connexion"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        tools:ignore="SpUsage"
+        tools:text="@string/title_connexion"
+        tools:visibility="visible" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/signe_plus"
+        android:textColor="@color/green_second"
+        android:textSize="@dimen/signe_plus"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,SpUsage"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <!-- Identifiant -->
+
+    <!-- Mot de passe -->
+
+    <EditText
+        android:id="@+id/etIdentifiant"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edit"
+        android:hint="Identifiant"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintWidth_percent="0.8"
+        tools:layout_editor_absoluteY="292dp" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edit"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etIdentifiant"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Se connecter Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/green_second"
+        android:text="Se connecter"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <!-- Mot de passe oublié Button -->
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/green_second"
+        android:text="Mot de passe oublié"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="526dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
