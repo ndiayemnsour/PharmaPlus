@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="@color/green_third"/> <!-- Couleur de fond -->
+<stroke
+    android:width="2dp"
+    android:color="@color/green_third"/> <!-- Couleur et épaisseur de la bordure -->
+<corners android:radius="1000dp"/> <!-- Rayon de 15 pixels pour les coins -->
+<padding
+    android:left="10dp"
+    android:top="10dp"
+    android:right="10dp"
+    android:bottom="10dp"/> <!-- Padding à l'intérieur du champ de texte -->
+</shape>

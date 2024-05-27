@@ -4,4 +4,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_connexion">PHARMA</string>
+    <string name="signe_plus">+</string>
+    <string name="identifiant">Identifiant</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="mot_de_passe_oublie">Mot de passe oublié</string>
+
 </resources>
