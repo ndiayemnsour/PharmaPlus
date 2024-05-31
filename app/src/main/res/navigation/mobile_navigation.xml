@@ -6,20 +6,32 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_vente"
         android:name="sn.unchk.pharmaplus.ui.home.HomeFragment"
+        android:label="@string/title_vente"
+        tools:layout="@layout/fragment_vente" />
+
+    <fragment
+        android:id="@+id/navigation_finance"
+        android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
+        android:label="@string/title_finance"
+        tools:layout="@layout/fragment_finance" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="sn.unchk.pharmaplus.ui.notifications.NotificationsFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_commande"
         android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_commande"
+        tools:layout="@layout/fragment_commande" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="sn.unchk.pharmaplus.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_stock"
+        android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
+        android:label="@string/title_stock"
+        tools:layout="@layout/fragment_stock" />
 </navigation>
