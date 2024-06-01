@@ -13,5 +13,8 @@
     <string name="se_connecter">Se connecter</string>
     <string name="mot_de_passe_oublie">Mot de passe oublié</string>
     <string name="accueil">Accueil</string>
+    <string name="produit">Produits</string>
+    <string name="filtrer_par_categorie">Filtrer par catégorie...</string>
+    <string name="liste_produit">Liste des produits</string>
 
 </resources>
