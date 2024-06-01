@@ -2,7 +2,9 @@
 <resources>
     <color name="green">#67D177</color>
     <color name="green_second">#00FF00</color>
+    <color name="green_dark">#458B57</color> <!-- Couleur pour le mode sombre -->
     <color name="green_third">#91F3A0</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="transparent_gray_90">#E6BEBEBE</color>
 </resources>
