@@ -3,9 +3,8 @@
 
     <item
         android:id="@+id/navigation_vente"
-        android:icon="@drawable/finance"
-        android:title="@string/title_vente"
-        />
+        android:icon="@drawable/argent"
+        android:title="@string/title_vente" />
 
 
     <item
@@ -14,13 +13,14 @@
         android:title="@string/title_finance" />
 
 
+
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/accueil"
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_commande"
+        android:id="@+id/commande"
         android:icon="@drawable/com"
         android:title="@string/title_commande" />
 
