@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_finance"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
+        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
         android:label="@string/title_finance"
         tools:layout="@layout/fragment_finance" />
 
@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/navigation_commande"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
+        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
         android:label="@string/title_commande"
         tools:layout="@layout/fragment_commande" />
 
     <fragment
         android:id="@+id/navigation_stock"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.DashboardFragment"
+        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
         android:label="@string/title_stock"
         tools:layout="@layout/fragment_stock" />
 </navigation>
