@@ -18,6 +18,7 @@
     <string name="produit">Produits</string>
     <string name="filtrer_par_categorie">Filtrer par catégorie...</string>
     <string name="liste_produit">Liste des produits</string>
-    <string name="liste_vente">Liste des ventes</string>
+    <string name="liste_vente">Liste ventes</string>
+    <string name="liste_commande">Liste commandes</string>
 
 </resources>
