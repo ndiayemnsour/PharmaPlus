@@ -4,7 +4,9 @@
     <item
         android:id="@+id/navigation_vente"
         android:icon="@drawable/finance"
-        android:title="@string/title_vente" />
+        android:title="@string/title_vente"
+        />
+
 
     <item
         android:id="@+id/navigation_finance"

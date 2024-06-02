@@ -200,16 +200,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:text="Meilleures ventes"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -244,8 +241,9 @@
     <ListView
 
         android:id="@+id/listView"
-        android:layout_width="350dp"
-        android:layout_height="136dp"
+        android:layout_width="333dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/green"
         android:cacheColorHint="#FFFFFF"
         android:divider="@color/white"
@@ -253,8 +251,9 @@
         android:foregroundTint="#FFFFFF"
         android:headerDividersEnabled="true"
         android:isScrollContainer="true"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="30dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
