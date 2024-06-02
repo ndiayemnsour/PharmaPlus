@@ -18,7 +18,7 @@
         android:id="@+id/textView20"
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:text="@string/title_commande"
+        android:text="@string/liste_commande"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/title"
@@ -26,5 +26,43 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"/>
 
+    <SearchView
+        android:id="@+id/searchView3"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/search" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_produit"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/venteFilter"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/filtrer_par_categorie"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+         />
+
+    <ListView
+        android:layout_width="390dp"
+        android:layout_height="505dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:layout_editor_absoluteX="10dp" />
 </FrameLayout>
