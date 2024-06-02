@@ -5,6 +5,6 @@
     <dimen name="title">50dp</dimen>
     <dimen name="signe_plus">100dp</dimen>
     <dimen name="text_margin">16dp</dimen>
-    <dimen name="radius">25dp</dimen>
+    <dimen name="radius">20dp</dimen>
     <dimen name="sub_title">30</dimen>
 </resources>
