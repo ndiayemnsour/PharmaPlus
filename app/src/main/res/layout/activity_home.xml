@@ -259,7 +259,8 @@
         android:headerDividersEnabled="true"
         android:isScrollContainer="true"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
