@@ -13,6 +13,9 @@ dependencyResolutionManagement {
     }
 }
 
+
+
+
 rootProject.name = "PharmaPlus"
 include(":app")
  
