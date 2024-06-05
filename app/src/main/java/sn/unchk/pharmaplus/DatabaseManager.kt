@@ -2,6 +2,7 @@ package sn.unchk.pharmaplus
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 
 class DatabaseManager (context: Context){
@@ -19,5 +20,36 @@ class DatabaseManager (context: Context){
 
         db.insert(DatabasePharmaPlus.TABLE_ADMINS, null, values)
         db.close()
+    }
+
+    fun getAllAdmins(): List<Admin> {
+        val db: SQLiteDatabase = dbHelper.readableDatabase
+
+        val projection = arrayOf(DatabasePharmaPlus.COLUMN_ID, DatabasePharmaPlus.COLUMN_NAME, DatabasePharmaPlus.COLUMN_EMAIL)
+
+        val cursor: Cursor = db.query(
+            DatabasePharmaPlus.TABLE_ADMINS,
+            projection,
+            null,
+            null,
+            null,
+            null,
+            null
+        )
+
+        val admins = mutableListOf<Admin>()
+        with(cursor) {
+            while (moveToNext()) {
+                val id = getLong(getColumnIndexOrThrow(DatabasePharmaPlus.COLUMN_ID))
+                val name = getString(getColumnIndexOrThrow(DatabasePharmaPlus.COLUMN_NAME))
+                val email = getString(getColumnIndexOrThrow(DatabasePharmaPlus.COLUMN_EMAIL))
+                val password = getString(getColumnIndexOrThrow(DatabasePharmaPlus.COLUMN_PASSWORD))
+                admins.add(Admin(id, name, email, password))
+            }
+        }
+        cursor.close()
+        db.close()
+
+        return admins
     }
 }
