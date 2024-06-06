@@ -1,10 +1,11 @@
 package sn.unchk.pharmaplus
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +59,11 @@ class MainActivity : AppCompatActivity() {
             // Connexion réussie
             Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show()
             // Naviguer vers la prochaine activité
+            /*val intent = Intent(
+                this@MainActivity,
+                HomeActivity::class.java
+            )
+            startActivity(intent)*/
         } else {
             // Identifiants incorrects
             Toast.makeText(this, "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show()
