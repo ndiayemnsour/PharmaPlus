@@ -40,9 +40,9 @@ class MainActivity : AppCompatActivity() {
         dbManager.addAdmin(this, "Mansour ndiaye", "mansour@pharmaplus.com", "Mansour@2K24")
 
         // Récupérer tous les utilisateurs
-        val users = dbManager.getAllAdmins()
-        users.forEach { admin ->
-            println("Admin: ${admin.name}, Email: ${admin.email}")
+        val admins = dbManager.getAllAdmins()
+        admins.forEach { admin ->
+            println("Email: ${admin.email}, Password: ${admin.password}")
         }
     }
     private fun authentification(username: String, password: String) {
@@ -52,18 +52,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         val dbManager = DatabaseManager(this)
-        val users = dbManager.getAllAdmins()
-        val user = users.find { it.name == username && it.email == password }
+        val admins = dbManager.getAllAdmins()
+        val admin = admins.find { it.email == username && it.password == password }
 
-        if (user != null) {
+        if (admin != null) {
             // Connexion réussie
             Toast.makeText(this, "Connexion réussie", Toast.LENGTH_SHORT).show()
             // Naviguer vers la prochaine activité
-            /*val intent = Intent(
+            val intent = Intent(
                 this@MainActivity,
                 HomeActivity::class.java
             )
-            startActivity(intent)*/
+            startActivity(intent)
         } else {
             // Identifiants incorrects
             Toast.makeText(this, "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show()

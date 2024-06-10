@@ -20,5 +20,7 @@
     <string name="liste_produit">Liste des produits</string>
     <string name="liste_vente">Liste ventes</string>
     <string name="liste_commande">Liste commandes</string>
+    <string name="texte_bienvenue">Bonjour Babacar,\nBienvenue dans Pharmaplus !</string>
+    <string name="meilleures_ventes">Meilleures ventes</string>
 
 </resources>

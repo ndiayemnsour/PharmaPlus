@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    tools:context=".FinanceFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
@@ -13,34 +12,28 @@
         android:background="@color/green"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="2dp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_finance"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/title"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/caisse"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginEnd="19dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/card"
         android:backgroundTint="@color/green"
-        app:layout_constraintEnd_toStartOf="@+id/inventaire"
-        app:layout_constraintStart_toStartOf="parent"
-        app:cardCornerRadius="@dimen/radius"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" >
+        >
 
         <TextView
             android:id="@+id/textView7"
@@ -67,12 +60,11 @@
         android:id="@+id/inventaire"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="430dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:cardCornerRadius="@dimen/radius"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" >
+        android:background="@drawable/card"
+        android:backgroundTint="@color/green">
 
         <TextView
             android:id="@+id/textView8"
@@ -129,18 +121,12 @@
         android:id="@+id/regularisation"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="19dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="105dp"
-        android:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/avoir"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caisse"
-        app:cardCornerRadius="@dimen/radius"
-        app:layout_constraintVertical_bias="0.261" >
+        android:background="@drawable/card"
+        android:backgroundTint="@color/green">
 
         <TextView
             android:id="@+id/textView9"
@@ -167,15 +153,12 @@
         android:id="@+id/avoir"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="105dp"
-        android:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inventaire"
-        app:cardCornerRadius="@dimen/radius"
-        app:layout_constraintVertical_bias="0.261" >
+        android:background="@drawable/card"
+        android:backgroundTint="@color/green">
 
         <TextView
             android:id="@+id/textView10"
@@ -198,4 +181,5 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
     </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

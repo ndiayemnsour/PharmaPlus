@@ -25,7 +25,7 @@ class DatabaseManager (context: Context){
     fun getAllAdmins(): List<Admin> {
         val db: SQLiteDatabase = dbHelper.readableDatabase
 
-        val projection = arrayOf(DatabasePharmaPlus.COLUMN_ID, DatabasePharmaPlus.COLUMN_NAME, DatabasePharmaPlus.COLUMN_EMAIL)
+        val projection = arrayOf(DatabasePharmaPlus.COLUMN_ID, DatabasePharmaPlus.COLUMN_NAME, DatabasePharmaPlus.COLUMN_EMAIL, DatabasePharmaPlus.COLUMN_PASSWORD)
 
         val cursor: Cursor = db.query(
             DatabasePharmaPlus.TABLE_ADMINS,

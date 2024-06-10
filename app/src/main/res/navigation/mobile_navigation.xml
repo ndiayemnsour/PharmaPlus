@@ -13,25 +13,25 @@
 
     <fragment
         android:id="@+id/navigation_finance"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
+        android:name="sn.unchk.pharmaplus.FinanceFragment"
         android:label="@string/title_finance"
         tools:layout="@layout/fragment_finance" />
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="sn.unchk.pharmaplus.ui.notifications.NotificationsFragment"
+        android:name="sn.unchk.pharmaplus.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_commande"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
+        android:name="sn.unchk.pharmaplus.Commandefragment"
         android:label="@string/title_commande"
         tools:layout="@layout/fragment_commande" />
 
     <fragment
         android:id="@+id/navigation_stock"
-        android:name="sn.unchk.pharmaplus.ui.dashboard.FinanceFragment"
+        android:name="sn.unchk.pharmaplus.ProduitFragment"
         android:label="@string/title_stock"
-        tools:layout="@layout/fragment_stock" />
+        tools:layout="@layout/fragment_produit" />
 </navigation>
